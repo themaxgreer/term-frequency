@@ -31,7 +31,7 @@ public class TermFrequency {
 		ValueComparator thecomp = new ValueComparator(themap);
 		TreeMap<String, Integer> sortedMap = new TreeMap<>(thecomp);
 		int count = Integer.parseInt(args[0]);
-		String ROOT = "HW3-Corpus-OANC/";
+		String ROOT = "Examples-Corpus/";
 		FileVisitor<Path> fileProcessor = new ProcessFile();
 		Files.walkFileTree(Paths.get(ROOT), fileProcessor);
 		sortedMap.putAll(themap);
